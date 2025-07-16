@@ -23,7 +23,7 @@ export default function Navbar() {
                 Inicio
               </Link>
               <Link
-                href="/servicios"
+                href="/soat"
                 className="text-gray-600 hover:text-blue-600 transition-colors"
               >
                 SOAT para tu vehículo
