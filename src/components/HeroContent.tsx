@@ -9,7 +9,7 @@ import { AnimatedSection } from './AnimatedSection';
 
 const HeroContent: React.FC = () => {
   return (
-    <div className="grid lg:grid-cols-2 gap-12 items-center text-black"> {/* Aseguramos texto negro aquí */}
+    <div className="grid lg:grid-cols-2 gap-12 items-center text-white"> {/* Aseguramos texto negro aquí */}
     <AnimatedSection animation='slideRight' delay={200}>
       <div className="space-y-8">
         <div className="space-y-4">
@@ -59,13 +59,13 @@ const HeroContent: React.FC = () => {
         <div className="relative">
         <Image
           src="/local.jpg" // Asegúrate de tener esta imagen o cámbiala
-          alt="Tienda ConveniMax 24/7"
+          alt="Tienda Bosque Oil Express Shop SAS"
           width={500}
           height={600}
           className="rounded-2xl shadow-2xl"
         />
         {/* Tarjeta flotante inferior */}
-        <div className="absolute -bottom-6 -left-6 bg-white p-4 rounded-xl shadow-lg">
+        <div className="absolute -bottom-6 -left-6 bg-green-600 text-white p-4 rounded-xl shadow-lg">
           <div className="flex items-center space-x-3">
             <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
               <Clock className="h-6 w-6 text-green-600" />
@@ -77,8 +77,7 @@ const HeroContent: React.FC = () => {
           </div>
         </div>
       </div>
-      </AnimatedSection>
-      
+      </AnimatedSection>  
     </div>
   );
 };

@@ -18,10 +18,10 @@ export default function Navbar() {
       <AnimatedSection animation="slideUp">
         {/* Usamos el contenedor simple del primer header */}
         <div className="container flex h-16 items-center justify-between px-4">
-          {/* Logo/Nombre de la web: ConveniMax 24/7 con icono y estilo group */}
+          {/* Logo/Nombre de la web: Bosque Oil Express Shop SAS con icono y estilo group */}
           <div className="flex items-center space-x-2 group">
             <ShoppingCart className="h-6 w-6 text-green-500 group-hover:rotate-12 transition-transform duration-300" />
-            <span className="text-xl font-bold text-white">ConveniMax 24/7</span>
+            <span className="text-xl font-bold text-white">Bosque Oil Express Shop SAS</span>
           </div>
 
           {/* Enlaces centrales: Reducidos y con los estilos de ConveniMax */}

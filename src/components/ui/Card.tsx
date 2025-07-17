@@ -11,9 +11,9 @@ const Card: React.FC<CardProps> = ({ children, className }) => {
   return (
     <div
       className={`
-        bg-white rounded-lg shadow-lg overflow-hidden
+        bg-slate-700 border-slate-600 rounded-lg shadow-lg overflow-hidden
         p-6 md:p-8 lg:p-10
-        border border-gray-200
+        border
         hover:shadow-xl transition-shadow duration-300 ease-in-out
         ${className || ''}
       `}
