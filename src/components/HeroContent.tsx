@@ -4,11 +4,13 @@ import Image from 'next/image';
 import { Clock, Star } from 'lucide-react'; // Importa los íconos de lucide-react
 import Badge from './ui/Badge';
 import Button from './ui/Button';
+import { AnimatedSection } from './AnimatedSection';
 
 
 const HeroContent: React.FC = () => {
   return (
     <div className="grid lg:grid-cols-2 gap-12 items-center text-black"> {/* Aseguramos texto negro aquí */}
+    <AnimatedSection animation='slideRight' delay={200}>
       <div className="space-y-8">
         <div className="space-y-4">
           {/* Badge */}
@@ -50,8 +52,11 @@ const HeroContent: React.FC = () => {
           </div>
         </div>
       </div>
+    </AnimatedSection>
+      
       {/* Sección de imagen */}
-      <div className="relative">
+      <AnimatedSection animation='slideLeft' delay={400}>
+        <div className="relative">
         <Image
           src="/local.jpg" // Asegúrate de tener esta imagen o cámbiala
           alt="Tienda ConveniMax 24/7"
@@ -72,6 +77,8 @@ const HeroContent: React.FC = () => {
           </div>
         </div>
       </div>
+      </AnimatedSection>
+      
     </div>
   );
 };

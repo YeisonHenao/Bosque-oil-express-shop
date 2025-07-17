@@ -1,10 +1,12 @@
 import Image from "next/image";
 import Badge from "@/components/ui/Badge";
+import { AnimatedSection } from "@/components/AnimatedSection";
 import HeroComponent from "@/components/HeroComponent";
 import HeroContent from "@/components/HeroContent";
 import Card from "@/components/ui/Card";
 import Button from "@/components/ui/Button";
 import SoatContentSection from "@/components/SoatContentSection";
+import { FloatingElements } from "@/components/FloatingElements";
 import {
   FaFile,
   FaShoppingCart,
@@ -19,6 +21,8 @@ import {
 export default function Home() {
   return (
     <div>
+      <FloatingElements />
+      {/* Hero Section */}
       <HeroComponent>
         <HeroContent />
       </HeroComponent>
