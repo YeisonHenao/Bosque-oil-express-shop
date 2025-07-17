@@ -2,12 +2,6 @@
 import React from 'react';
 import Image from 'next/image';
 import { Clock, Star } from 'lucide-react'; // Importa los íconos de lucide-react
-
-// Asegúrate de que las rutas de importación para Badge y Button sean correctas
-// Si usas shadcn/ui:
-// import { Badge } from "@/components/ui/badge";
-// import { Button } from "@/components/ui/button";
-// Si usas las implementaciones mínimas que creamos:
 import Badge from './ui/Badge';
 import Button from './ui/Button';
 
