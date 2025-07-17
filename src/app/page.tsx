@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Badge from "@/components/ui/Badge";
 import { AnimatedSection } from "@/components/AnimatedSection";
 import HeroComponent from "@/components/HeroComponent";
 import HeroContent from "@/components/HeroContent";

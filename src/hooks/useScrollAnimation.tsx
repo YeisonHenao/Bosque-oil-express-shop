@@ -16,13 +16,14 @@ export function useScrollAnimation(threshold = 0.1) {
       { threshold },
     )
 
-    if (ref.current) {
-      observer.observe(ref.current)
+    const currentElement = ref.current
+    if (currentElement) {
+      observer.observe(currentElement)
     }
 
     return () => {
-      if (ref.current) {
-        observer.unobserve(ref.current)
+      if (currentElement) {
+        observer.unobserve(currentElement)
       }
     }
   }, [threshold])
