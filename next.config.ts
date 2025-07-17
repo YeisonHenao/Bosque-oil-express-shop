@@ -7,6 +7,7 @@ const nextConfig: NextConfig = {
     // Si usas dominios externos para tus imágenes, también irían aquí
     // domains: ['example.com'],
   },
+  basePath: '/bosqueoilsiteweb',
   /* config options here */
 };
 
