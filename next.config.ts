@@ -1,14 +1,9 @@
 import type { NextConfig } from "next";
 
-const nextConfig: NextConfig = {
-  output: 'export',
-  images: {
-    unoptimized: true, // Esto es importante para exportación estática de imágenes de Next.js
-    // Si usas dominios externos para tus imágenes, también irían aquí
-    // domains: ['example.com'],
-  },
-  basePath: '/Bosque-oil-express-shop',
-  /* config options here */
+const nextConfig = {
+  basePath: "/Bosque-oil-express-shop",
+  output: "export",
+  reactStrictMode: true,
 };
 
 export default nextConfig;
