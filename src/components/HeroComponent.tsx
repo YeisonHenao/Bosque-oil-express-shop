@@ -9,7 +9,7 @@ interface HeroComponentProps {
 const HeroComponent: React.FC<HeroComponentProps> = ({ children }) => {
   return (
     <section
-      className="relative w-full overflow-hidden py-20 lg:py-32 bg-gradient-to-br from-green-50 to-emerald-100 flex items-center justify-center"
+      className="relative w-full overflow-hidden py-20 lg:py-32 bg-gradient-to-br from-slate-800 to-slate-900 flex items-center justify-center"
       // Nuevas clases de Tailwind para el fondo y el relleno vertical
       // 'relative': Necesario si añades elementos posicionados absolutamente dentro.
       // 'w-full': Ocupa todo el ancho disponible.

@@ -4,8 +4,6 @@ import Footer from "@/components/Footer";
 import "./globals.css";
 import { Inter } from 'next/font/google' // Importa la fuente Inter
 
-// Configura la fuente. Puedes especificar los pesos que quieres cargar.
-// 'subsets: ['latin']' es esencial para que la fuente funcione correctamente.
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 
 

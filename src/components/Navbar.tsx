@@ -1,72 +1,64 @@
+// Asegúrate de importar AnimatedSection si es un componente tuyo
+// Asegúrate de importar ShoppingCart y Phone de lucide-react
+import { ShoppingCart, Phone } from "lucide-react";
+// Asegúrate de importar Link de next/link
 import Link from "next/link";
-import { FaPhone } from "react-icons/fa";
+// Asegúrate de importar tu componente Button
+import Button from "@/components/ui/Button"; // Ajusta la ruta si es necesario
+import { AnimatedSection } from "./AnimatedSection";
+// Si FloatingElements no se usa en el header final, no lo importes
+// import FloatingElements from './FloatingElements';
 
 export default function Navbar() {
   return (
-    <nav className="w-full bg-white shadow-md fixed top-0 left-0 right-0 z-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
-          {/* Logo/Nombre de la web */}
-          <div className="flex-shrink-0">
-            <Link href="/" className="text-xl font-bold text-blue-600">
-              Bosque Oil Express Shop SAS
-            </Link>
+    <header className="sticky top-0 z-50 w-full border-b border-slate-700 bg-slate-900/95 backdrop-blur supports-[backdrop-filter]:bg-slate-900/60">
+      {/* Eliminamos <FloatingElements /> */}
+      {/* Eliminamos el <nav className="w-full"> envolvente */}
+
+      <AnimatedSection animation="slideUp">
+        {/* Usamos el contenedor simple del primer header */}
+        <div className="container flex h-16 items-center justify-between px-4">
+          {/* Logo/Nombre de la web: Bosque Oil Express Shop SAS con icono y estilo group */}
+          <div className="flex items-center space-x-2 group">
+            <ShoppingCart className="h-6 w-6 text-green-500 group-hover:rotate-12 transition-transform duration-300" />
+            <span className="text-xl font-bold text-white">Bosque Oil Express Shop SAS</span>
           </div>
 
-          {/* Enlaces centrales */}
-          <div className="hidden md:block">
-            <div className="flex items-center space-x-8">
-              <Link
-                href="/"
-                className="text-gray-600 hover:text-blue-600 transition-colors"
-              >
-                Inicio
-              </Link>
-              <Link
-                href="/soat"
-                className="text-gray-600 hover:text-blue-600 transition-colors"
-              >
-                SOAT para tu vehículo
-              </Link>
-              <Link
-                href="/precios"
-                className="text-gray-600 hover:text-blue-600 transition-colors"
-              >
-                Licores
-              </Link>
-              <Link
-                href="/contacto"
-                className="text-gray-600 hover:text-blue-600 transition-colors"
-              >
-                Aceites
-              </Link>
-              <Link
-                href="/contacto"
-                className="text-gray-600 hover:text-blue-600 transition-colors"
-              >
-                Filtros
-              </Link>
-              <Link
-                href="/contacto"
-                className="text-gray-600 hover:text-blue-600 transition-colors"
-              >
-                Snacks
-              </Link>
-            </div>
-          </div>
-
-          {/* Botón de llamada */}
-          <div>
-            <a
-              href="tel:+573245906881"
-              className="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+          {/* Enlaces centrales: Reducidos y con los estilos de ConveniMax */}
+          <nav className="hidden md:flex items-center space-x-6">
+            <Link
+              href="#productos"
+              className="text-sm font-medium text-slate-300 hover:text-green-500 transition-all duration-300 hover:scale-105"
             >
-              <FaPhone className="mr-2" />
-              <span>Llama ya</span>
-            </a>
-          </div>
+              Productos
+            </Link>
+            <Link
+              href="#soat"
+              className="text-sm font-medium text-slate-300 hover:text-green-500 transition-all duration-300 hover:scale-105"
+            >
+              SOAT
+            </Link>
+            <Link
+              href="#ventajas"
+              className="text-sm font-medium text-slate-300 hover:text-green-500 transition-all duration-300 hover:scale-105"
+            >
+              Ventajas
+            </Link>
+            <Link
+              href="#contacto"
+              className="text-sm font-medium text-slate-300 hover:text-green-500 transition-all duration-300 hover:scale-105"
+            >
+              Contacto
+            </Link>
+          </nav>
+
+          {/* Botón de llamada: Usando tu componente Button */}
+          <Button className="bg-green-600 hover:bg-green-700 hover:scale-105 transition-all duration-300 hover:shadow-lg hover:shadow-green-500/25">
+            <Phone className="h-4 w-4 mr-2" />
+            Llamar Ahora
+          </Button>
         </div>
-      </div>
-    </nav>
+      </AnimatedSection>
+    </header>
   );
 }
