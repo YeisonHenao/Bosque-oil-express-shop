@@ -59,7 +59,7 @@ const HeroContent: React.FC = () => {
       {/* Sección de imagen */}
       <div className="relative">
         <Image
-          src="/placeholder.svg?height=600&width=500" // Asegúrate de tener esta imagen o cámbiala
+          src="/local.jpg" // Asegúrate de tener esta imagen o cámbiala
           alt="Tienda ConveniMax 24/7"
           width={500}
           height={600}

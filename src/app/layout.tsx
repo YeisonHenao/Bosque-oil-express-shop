@@ -1,17 +1,12 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import "./globals.css";
+import { Inter } from 'next/font/google' // Importa la fuente Inter
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+// Configura la fuente. Puedes especificar los pesos que quieres cargar.
+// 'subsets: ['latin']' es esencial para que la fuente funcione correctamente.
+const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "Bosque Oil Express Shop SAS",
@@ -26,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={inter.variable}
       >
         <Navbar />
         <main>

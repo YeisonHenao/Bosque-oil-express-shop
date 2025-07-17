@@ -20,9 +20,7 @@ const HeroComponent: React.FC<HeroComponentProps> = ({ children }) => {
       // NOTA: Eliminamos 'text-white' del section para que el texto sea negro por defecto o se defina en el children.
     >
       {/* Contenedor interno para dar un ancho máximo y centrar el contenido */}
-      <div className="container mx-auto px-4 text-center text-black">
-        {/* Añadimos 'text-black' aquí para asegurar que todo el contenido dentro de este div sea negro,
-            a menos que se sobrescriba explícitamente en los children. */}
+      <div className="container mx-auto px-4 text-black">
         {children}
       </div>
     </section>

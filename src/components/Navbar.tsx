@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { FaPhone } from "react-icons/fa"; // Necesitarás instalar: npm install react-icons
+import { FaPhone } from "react-icons/fa";
 
 export default function Navbar() {
   return (
@@ -58,7 +58,7 @@ export default function Navbar() {
           {/* Botón de llamada */}
           <div>
             <a
-              href="tel:+573001234567"
+              href="tel:+573245906881"
               className="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
             >
               <FaPhone className="mr-2" />
