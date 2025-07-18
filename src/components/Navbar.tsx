@@ -1,19 +1,13 @@
-// Asegúrate de importar AnimatedSection si es un componente tuyo
-// Asegúrate de importar ShoppingCart y Phone de lucide-react
+
 import { ShoppingCart, Phone } from "lucide-react";
-// Asegúrate de importar Link de next/link
 import Link from "next/link";
-// Asegúrate de importar tu componente Button
 import Button from "@/components/ui/Button"; // Ajusta la ruta si es necesario
 import { AnimatedSection } from "./AnimatedSection";
-// Si FloatingElements no se usa en el header final, no lo importes
-// import FloatingElements from './FloatingElements';
+
 
 export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-slate-700 bg-slate-900/95 backdrop-blur supports-[backdrop-filter]:bg-slate-900/60">
-      {/* Eliminamos <FloatingElements /> */}
-      {/* Eliminamos el <nav className="w-full"> envolvente */}
 
       <AnimatedSection animation="slideUp">
         {/* Usamos el contenedor simple del primer header */}

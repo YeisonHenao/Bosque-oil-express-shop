@@ -22,7 +22,9 @@ export default function RootLayout({
       <body
         className={inter.variable}
       >
-        <Navbar />
+        <header className="bg-slate-900/95 backdrop-blur supports-[backdrop-filter]:bg-slate-900/60">
+          <Navbar />
+        </header>
         <main>
           {children}
         </main>
