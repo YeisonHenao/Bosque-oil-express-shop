@@ -36,9 +36,11 @@ const HeroContent: React.FC = () => {
           <Button size="lg" className="bg-green-600 hover:bg-green-700 text-lg px-8">
             Ver Productos
           </Button>
-          <Button size="lg" variant="outline" className="text-lg px-8 bg-transparent border-gray-400 hover:border-gray-600">
+          <a href="https://maps.app.goo.gl/7dfwY7Fc88AHLT5w7" target="_blank" rel="noopener noreferrer">
+            <Button size="lg" variant="outline" className="text-lg px-8 bg-transparent border-gray-400 hover:border-gray-600">
             Ubicación
           </Button>
+          </a>
         </div>
         {/* Información adicional */}
         <div className="flex items-center space-x-8 text-sm"> {/* Eliminamos text-muted-foreground */}

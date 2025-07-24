@@ -47,10 +47,12 @@ export default function Navbar() {
           </nav>
 
           {/* Botón de llamada: Usando tu componente Button */}
-          <Button className="bg-green-600 hover:bg-green-700 hover:scale-105 transition-all duration-300 hover:shadow-lg hover:shadow-green-500/25">
-            <Phone className="h-4 w-4 mr-2" />
-            Llamar Ahora
-          </Button>
+          <a href="tel:+573245906881" rel="noopener noreferrer">
+            <Button className="bg-green-600 hover:bg-green-700 hover:scale-105 transition-all duration-300 hover:shadow-lg hover:shadow-green-500/25">
+              <Phone className="h-4 w-4 mr-2" />
+              Llamar Ahora
+            </Button>
+          </a>
         </div>
       </AnimatedSection>
     </header>

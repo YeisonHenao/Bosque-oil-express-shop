@@ -4,6 +4,7 @@ import HeroComponent from "@/components/HeroComponent";
 import HeroContent from "@/components/HeroContent";
 import Card from "@/components/ui/Card";
 import Button from "@/components/ui/Button";
+import Badge from "@/components/ui/Badge";
 import SoatContentSection from "@/components/SoatContentSection";
 import { FloatingElements } from "@/components/FloatingElements";
 import { CounterSection } from "@/components/CounterSection";
@@ -103,20 +104,200 @@ export default function Home() {
           </AnimatedSection>
         </div>
       </section>
+
+      <section className="py-20 bg-slate-900">
+        <div className="container px-4 mx-auto">
+          <AnimatedSection animation="fadeIn">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-white">
+                Nuestro Ecosistema de Servicios
+              </h2>
+              <p className="text-xl text-slate-300 max-w-3xl mx-auto">
+                Más que una tienda de conveniencia. Descubre todos nuestros
+                negocios y servicios especializados
+              </p>
+            </div>
+          </AnimatedSection>
+
+          {/* Licorerias VIP */}
+          <AnimatedSection animation="slideUp" delay={100}>
+            <Card className="bg-gradient-to-br from-purple-900/50 to-slate-700 border-purple-500/30 hover:shadow-lg hover:shadow-purple-500/20 transition-all duration-300 group mb-12">
+              <div className="flex items-center space-x-4 mb-4">
+                  <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center group-hover:animate-pulse">
+                    <FaStar className="h-8 w-8 text-purple-600" />
+                  </div>
+                  <div>
+                    <h2 className="text-white text-2xl">
+                      Licorerias VIP
+                    </h2>
+                    <Badge className="bg-purple-600 text-white mt-2">
+                      Servicio Premium
+                    </Badge>
+                  </div>
+                </div>
+              <div className="grid lg:grid-cols-2 gap-8">
+                <div className="space-y-4">
+                  <p className="text-slate-300 text-lg">
+                    Dos ubicaciones exclusivas con la mejor selección de
+                    licores premium, vinos importados y cervezas artesanales.
+                  </p>
+                  <div className="space-y-3">
+                    <div className="flex items-center space-x-3">
+                        <div className="w-2 h-2 bg-purple-400 rounded-full"></div>
+                        <span className="text-slate-300">
+                          Licores premium y exclusivos
+                        </span>
+                      </div>
+                      <div className="flex items-center space-x-3">
+                        <div className="w-2 h-2 bg-purple-400 rounded-full"></div>
+                        <span className="text-slate-300">
+                          Vinos importados y nacionales
+                        </span>
+                      </div>
+                      <div className="flex items-center space-x-3">
+                        <div className="w-2 h-2 bg-purple-400 rounded-full"></div>
+                        <span className="text-slate-300">
+                          Cervezas artesanales
+                        </span>
+                      </div>
+                      <div className="flex items-center space-x-3">
+                        <div className="w-2 h-2 bg-purple-400 rounded-full"></div>
+                        <span className="text-slate-300">
+                          Asesoría personalizada
+                        </span>
+                      </div>
+                    </div>
+                    <Button className="w-full bg-purple-600 hover:bg-purple-700 hover:scale-105 transition-all duration-300">
+                      Conocer Ubicaciones
+                    </Button>
+                  </div>
+                  <div className="grid grid-cols-2 gap-4">
+                    <div className="group">
+                      <Image
+                        src="/placeholder.svg?height=200&width=250"
+                        alt="Licorera VIP Sede 1"
+                        width={250}
+                        height={200}
+                        className="rounded-xl shadow-lg transition-transform duration-500 w-full h-48 object-cover"
+                      />
+                      <p className="text-slate-400 text-sm mt-2 text-center">
+                        Sede Principal
+                      </p>
+                    </div>
+                    <div className="group">
+                      <Image
+                        src="/placeholder.svg?height=200&width=250"
+                        alt="Licorera VIP Sede 2"
+                        width={250}
+                        height={200}
+                        className="rounded-xl shadow-lg transition-transform duration-500 w-full h-48 object-cover"
+                      />
+                      <p className="text-slate-400 text-sm mt-2 text-center">
+                        Sede Norte
+                      </p>
+                    </div>
+                  </div>
+                </div>
+            </Card>
+          </AnimatedSection>
+
+          {/* Servicios Automotrices */}
+          <AnimatedSection animation="slideUp" delay={200}>
+            <Card className="bg-gradient-to-br from-orange-900/50 to-slate-700 border-orange-500/30 hover:shadow-lg hover:shadow-orange-500/20 transition-all duration-300 group mb-12">
+              <div className="flex items-center space-x-4 mb-4">
+                <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center group-hover:animate-pulse">
+                  <FaShoppingCart className="h-8 w-8 text-orange-600" />
+                </div>
+                <div>
+                  <h2 className="text-white text-2xl">
+                    Servicios Automotrices
+                  </h2>
+                  <Badge className="bg-orange-600 text-white mt-2">
+                    Taller Especializado
+                  </Badge>
+                </div>
+              </div>
+              <div className="grid lg:grid-cols-2 gap-8">
+                <div className="space-y-4">
+                  <p className="text-slate-300 text-lg">
+                    Taller especializado en cambio de aceite y nivelación de
+                    automóviles con personal capacitado y equipos modernos.
+                  </p>
+                  <div className="space-y-3">
+                    <div className="flex items-center space-x-3">
+                      <div className="w-2 h-2 bg-orange-400 rounded-full"></div>
+                      <span className="text-slate-300">
+                        Cambio de aceite profesional
+                      </span>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <div className="w-2 h-2 bg-orange-400 rounded-full"></div>
+                      <span className="text-slate-300">
+                        Nivelación y alineación
+                      </span>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <div className="w-2 h-2 bg-orange-400 rounded-full"></div>
+                      <span className="text-slate-300">
+                        Aceites de marcas reconocidas
+                      </span>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <div className="w-2 h-2 bg-orange-400 rounded-full"></div>
+                      <span className="text-slate-300">
+                        Servicio rápido y garantizado
+                      </span>
+                    </div>
+                  </div>
+                  <Button className="w-full bg-orange-600 hover:bg-orange-700 hover:scale-105 transition-all duration-300">
+                    Agendar Servicio
+                  </Button>
+                </div>
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="group">
+                    <Image
+                      src="/placeholder.svg?height=200&width=250"
+                      alt="Taller Automotriz - Área de Servicio"
+                      width={250}
+                      height={200}
+                      className="rounded-xl shadow-lg transition-transform duration-500 w-full h-48 object-cover"
+                    />
+                    <p className="text-slate-400 text-sm mt-2 text-center">
+                      Área de Servicio
+                    </p>
+                  </div>
+                  <div className="group">
+                    <Image
+                      src="/placeholder.svg?height=200&width=250"
+                      alt="Taller Automotriz - Equipos"
+                      width={250}
+                      height={200}
+                      className="rounded-xl shadow-lg transition-transform duration-500 w-full h-48 object-cover"
+                    />
+                    <p className="text-slate-400 text-sm mt-2 text-center">
+                      Equipos Modernos
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </Card>
+          </AnimatedSection>
+        </div>
+      </section>
       <section id="soat" className="py-20 bg-slate-900">
         {" "}
         <div className="container px-4 mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <AnimatedSection animation="slideRight">
               <div className="relative w-full h-[400px] lg:h-[500px] rounded-xl shadow-lg overflow-hidden">
-              <Image
-                src="/interior2.jpg"
-                alt="Servicio SOAT"
-                layout="fill" // Esto hace que la imagen llene el contenedor padre
-                objectFit="cover" // Esto asegura que la imagen cubra el espacio sin distorsionarse
-                className="rounded-xl" // Las esquinas redondeadas y sombra ahora en el contenedor
-              />
-            </div>
+                <Image
+                  src="/interior2.jpg"
+                  alt="Servicio SOAT"
+                  layout="fill" // Esto hace que la imagen llene el contenedor padre
+                  objectFit="cover" // Esto asegura que la imagen cubra el espacio sin distorsionarse
+                  className="rounded-xl" // Las esquinas redondeadas y sombra ahora en el contenedor
+                />
+              </div>
             </AnimatedSection>
             {/* El componente SoatContentSection ya tiene los textos actualizados */}
             <AnimatedSection animation="slideLeft" delay={200}>
@@ -179,18 +360,18 @@ export default function Home() {
             servirte.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" variant="outline" className="text-lg px-8">
-              <FaMapPin className="h-5 w-5 mr-2" />
-              Ver Ubicación
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="text-lg px-8 border-white text-white hover:bg-white hover:text-green-600 bg-transparent"
-            >
-              <FaPhone className="h-5 w-5 mr-2" />
-              Llamar Ahora
-            </Button>
+            <a href="https://maps.app.goo.gl/7dfwY7Fc88AHLT5w7" target="_blank" rel="noopener noreferrer">
+              <Button size="lg" variant="outline" className="text-lg px-8">
+                <FaMapPin className="h-5 w-5 mr-2" />
+                Ver Ubicación
+              </Button>
+            </a>
+            <a href="tel:+573245906881" rel="noopener noreferrer">
+              <Button size="lg" variant="outline" className="text-lg px-8 border-white text-white hover:bg-white hover:text-green-600 bg-transparent">
+                <FaPhone className="h-5 w-5 mr-2" />
+                Llamar Ahora
+              </Button>
+            </a>
           </div>
         </div>
       </section>
