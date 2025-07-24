@@ -174,7 +174,7 @@ export default function Home() {
                   <div className="grid grid-cols-2 gap-4">
                     <div className="group">
                       <Image
-                        src="/placeholder.svg?height=200&width=250"
+                        src="./placeholder.svg?height=200&width=250"
                         alt="Licorera VIP Sede 1"
                         width={250}
                         height={200}
@@ -186,7 +186,7 @@ export default function Home() {
                     </div>
                     <div className="group">
                       <Image
-                        src="/placeholder.svg?height=200&width=250"
+                        src="./placeholder.svg?height=200&width=250"
                         alt="Licorera VIP Sede 2"
                         width={250}
                         height={200}
@@ -256,7 +256,7 @@ export default function Home() {
                 <div className="grid grid-cols-2 gap-4">
                   <div className="group">
                     <Image
-                      src="/placeholder.svg?height=200&width=250"
+                      src="./placeholder.svg?height=200&width=250"
                       alt="Taller Automotriz - Área de Servicio"
                       width={250}
                       height={200}
@@ -268,7 +268,7 @@ export default function Home() {
                   </div>
                   <div className="group">
                     <Image
-                      src="/placeholder.svg?height=200&width=250"
+                      src="./placeholder.svg?height=200&width=250"
                       alt="Taller Automotriz - Equipos"
                       width={250}
                       height={200}
@@ -291,7 +291,7 @@ export default function Home() {
             <AnimatedSection animation="slideRight">
               <div className="relative w-full h-[400px] lg:h-[500px] rounded-xl shadow-lg overflow-hidden">
                 <Image
-                  src="/interior2.jpg"
+                  src="./interior2.jpg"
                   alt="Servicio SOAT"
                   layout="fill" // Esto hace que la imagen llene el contenedor padre
                   objectFit="cover" // Esto asegura que la imagen cubra el espacio sin distorsionarse

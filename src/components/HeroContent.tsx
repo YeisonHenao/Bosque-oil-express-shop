@@ -60,7 +60,7 @@ const HeroContent: React.FC = () => {
       <AnimatedSection animation='slideLeft' delay={400}>
         <div className="relative">
         <Image
-          src="/local.jpg" // Asegúrate de tener esta imagen o cámbiala
+          src="./local.jpg" // Asegúrate de tener esta imagen o cámbiala
           alt="Tienda Bosque Oil Express Shop SAS"
           width={500}
           height={600}
